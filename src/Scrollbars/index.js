@@ -323,10 +323,8 @@ export default class Scrollbars extends Component {
     }
 
     setupDragging() {
-        css(document.body, disableSelectStyle);
         document.addEventListener('mousemove', this.handleDrag);
         document.addEventListener('mouseup', this.handleDragEnd);
-        document.onselectstart = returnFalse;
     }
 
     teardownDragging() {
